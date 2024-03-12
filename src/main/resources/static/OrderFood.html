@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order System - Order Food</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grid-container">
+    <header>
+        <h1>Food Order System</h1>
+    </header>
+    <div class="background-image"></div>
+    <div class="container">
+        <form id="orderFoodForm">
+            <label for="tableNumber">Table Number:</label>
+            <input type="number" id="tableNumber" name="tableNumber" required>
+
+            <label for="foodItem">Food Item:</label>
+            <input type="text" id="foodItem" name="foodItem" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button type="button" onclick="orderFood()">Order Food</button>
+        </form>
+    </div>
+</div>
+<script src="orderFood.js"></script>
+</body>
+</html>
